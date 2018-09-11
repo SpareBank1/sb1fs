@@ -1,0 +1,101 @@
+{
+  "transactions": [
+    {
+      "amount": {
+        "amount": -400,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "VISA",
+      "archiveReference": "10040",
+      "_links": {
+        "details": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/D7s8ojfXGTKlyso7iE0t4mf5brM/transactions/A1",
+          "method": "GET"
+        }
+      }
+    },
+    {
+      "amount": {
+        "amount": 1000,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-01",
+      "description": "Nettbank",
+      "archiveReference": "10041",
+      "_links": {
+        "details": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/D7s8ojfXGTKlyso7iE0t4mf5brM/transactions/A2",
+          "method": "GET"
+        }
+      }
+    },
+    {
+      "amount": {
+        "amount": -399.9,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-08-31",
+      "description": "Nettbank",
+      "archiveReference": "10042",
+      "_links": {
+        "details": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/D7s8ojfXGTKlyso7iE0t4mf5brM/transactions/A3",
+          "method": "GET"
+        }
+      }
+    },
+    {
+      "amount": {
+        "amount": -100,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-08-30",
+      "description": "Nettbank",
+      "archiveReference": "10043",
+      "_links": {
+        "details": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/D7s8ojfXGTKlyso7iE0t4mf5brM/transactions/A4",
+          "method": "GET"
+        }
+      }
+    },
+    {
+      "amount": {
+        "amount": -566,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-08-29",
+      "description": "Nettbank",
+      "archiveReference": "10044",
+      "_links": {
+        "details": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/D7s8ojfXGTKlyso7iE0t4mf5brM/transactions/A5",
+          "method": "GET"
+        }
+      }
+    },
+    {
+      "amount": {
+        "amount": 2000,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-08-28",
+      "description": "Overføring",
+      "archiveReference": "10045",
+      "_links": {
+        "details": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/D7s8ojfXGTKlyso7iE0t4mf5brM/transactions/A6",
+          "method": "GET"
+        }
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/D7s8ojfXGTKlyso7iE0t4mf5brM/transactions",
+      "method": "GET"
+    }
+  }
+}
+

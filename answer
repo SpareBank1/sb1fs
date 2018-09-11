@@ -1,0 +1,21 @@
+#!/bin/bash
+# vim:ft=sh
+
+
+main() {
+    local -r attempt="$1"
+    local -r answer="$(cat answers | head -$QUESTION_INDEX| tail -1)"
+
+    if [[ "$attempt" = "$answer" ]]; then
+        echo Korrekt svar. Gratulerar!
+        echo Vill du vinna tangentbord? Skriv in epost:
+        read epost
+        echo "$epost" >> emailaddresses
+        start
+    else
+        echo Beklagar, fel svar. Førsøk igen.
+    fi
+}
+
+
+main "$@"

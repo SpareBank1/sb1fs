@@ -1,0 +1,531 @@
+{
+  "transactions": [
+    {
+      "amount": {
+        "amount": 7730.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "REMA1000",
+      "archiveReference": "65e529e6-1",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 6690.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "db703930-0",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 7980.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "f837f929-7",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 2500.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "b1182256-7",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 1420.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "205dd73d-1",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 4250.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "REMA1000",
+      "archiveReference": "c8dbc10a-e",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 5710.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "REMA1000",
+      "archiveReference": "e113ec6f-0",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 7970.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "eb52aacf-8",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 3230.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "aeb79d46-2",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 5490.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NARVESEN",
+      "archiveReference": "40c5159c-b",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 1240.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "8683a3a2-9",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 510.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NARVESEN",
+      "archiveReference": "4f0283be-9",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 7890.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "19f7ceaf-6",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 5640.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "REMA1000",
+      "archiveReference": "bbaa767b-e",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 5530.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "3f6f6f48-d",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 9130.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "4843c7f1-b",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 9640.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NARVESEN",
+      "archiveReference": "bddbbae6-7",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 5500.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "d0f2548b-8",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 8560.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "e3b03579-b",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 4850.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "7498874e-2",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 9170.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "REMA1000",
+      "archiveReference": "0f9860ad-4",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 1130.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NARVESEN",
+      "archiveReference": "94262179-a",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 6540.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "f8ee9fbc-d",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 3830.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "d183983a-c",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 2120.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "3e24181f-b",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 2130.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "ea6080d7-f",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 7130.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "38f2ac8f-c",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 70.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "9b903a9d-b",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 680.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "ac8105f7-a",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 6230.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "REMA1000",
+      "archiveReference": "3c08b882-c",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 7980.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NARVESEN",
+      "archiveReference": "08067934-e",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 1370.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NARVESEN",
+      "archiveReference": "712bcc5b-3",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 4900.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "50004824-8",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 2040.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NAMNSMANNEN",
+      "archiveReference": "0d1dc56c-7",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 540.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "c1053757-2",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 5560.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NARVESEN",
+      "archiveReference": "99654b1d-1",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 7050.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "NARVESEN",
+      "archiveReference": "060942b5-a",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 1090.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "0445361a-e",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 8260.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "bfc8fdc9-7",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    },
+    {
+      "amount": {
+        "amount": 5460.0,
+        "currencyCode": "NOK"
+      },
+      "accountingDate": "2018-09-02",
+      "description": "COOP",
+      "archiveReference": "dc738eb4-e",
+      "_links": null,
+      "remoteAccount": null,
+      "transactionCode": null,
+      "transactionType": null
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/D7s8ojfXGTKlyso7iE0t4mf5brM/transactions",
+      "method": "GET"
+    }
+  }
+}
+

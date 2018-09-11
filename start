@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+main() {
+
+    DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+    [[ ":$PATH:" != *":$DIR:"* ]] && PATH="${DIR}:${PATH}"
+
+
+    local -r number_of_questions="$(wc -l < questions)"
+    local -r number_of_answers="$(wc -l < answers)"
+
+
+    if ! [[ "$number_of_questions" -eq "$number_of_answers" ]]; then
+        echo "Number of questions $number_of_questions doesnt equal number of answers $number_of_answers" 
+        exit 1
+    fi
+
+
+    export QUESTION_INDEX="$(( ( RANDOM % $number_of_questions )  + 1 ))"
+    clear
+    echo '###################################'
+    echo Uppgift
+    echo "  "$(cat questions | head -$QUESTION_INDEX| tail -1)
+    echo Inspektera filsystemet och svara med:
+    echo '$ answer <ditt svar>'
+    echo
+    bash -i
+}
+
+
+main

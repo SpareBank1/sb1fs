@@ -7,7 +7,9 @@ import no.sparebank1.sb1fs.api.accounts.Sb1Accounts;
 import no.sparebank1.sb1fs.fs.DirNode;
 import no.sparebank1.sb1fs.fs.FileNode;
 import no.sparebank1.sb1fs.fs.Node;
-import no.sparebank1.sb1fs.fs.Sb1fs;
+
+
+import no.sparebank1.sb1fs.saul.http.BankApiMockServer;
 import no.sparebank1.sb1fs.transactions.APITransactions;
 import no.sparebank1.sb1fs.transactions.Transaction;
 import no.sparebank1.sb1fs.util.Java8Util;
@@ -34,10 +36,16 @@ public class Sb1FsApplication {
     private static Logger LOG = LoggerFactory.getLogger(Sb1FsApplication.class);
 
     public static void main(String[] args) throws IOException {
+
+
+
+        BankApiMockServer.start();
+
+
         CommandLine commandLine = generateCommandLine(args);
 
-        String token = commandLine.getOptionValue(OPTION_TOKEN);
-        String mountPath = commandLine.getOptionValue(OPTION_MOUNT_PATH);
+        String token = commandLine.getOptionValue(OPTION_TOKEN, "tokentokentoken");
+        String mountPath = commandLine.getOptionValue(OPTION_MOUNT_PATH, "t");
 
         if (commandLine.hasOption(OPTION_HELP) || token == null) {
             printUsage();
@@ -52,7 +60,8 @@ public class Sb1FsApplication {
 
 
         HttpResponse<Sb1Accounts> response = Java8Util.propagate(() -> Unirest
-                .get("https://developer-api.sparebank1.no/open/personal/banking/accounts/all")
+                //.get("https://developer-api.sparebank1.no/open/personal/banking/accounts/all")
+                .get("http://localhost:8080//open/personal/banking/accounts/all")
                 .header("Accept", "application/vnd.sparebank1.v1+json")
                 .header("Authorization", "Bearer " + token)
                 .asObject(Sb1Accounts.class));
@@ -64,7 +73,8 @@ public class Sb1FsApplication {
         ).collect(Collectors.toList()));
 
 
-        new Sb1fs(root, mountPath).mount();
+        new no.sparebank1.sb1fs.fs.Sb1fs(root, mountPath).mount();
+
 
         System.in.read();
 
@@ -105,9 +115,9 @@ public class Sb1FsApplication {
     }
     private static String getFileContent(Transaction t) {
         StringBuilder sb = new StringBuilder();
-        sb.append("accounting_date,remote_account,transaction_type,amount").append('\n');
-        sb.append(t.getAccountingDate()).append(",").append((t.getRemoteAccount())).append(",")
-                .append(t.getTransactionType()).append(",").append(t.getAmount().getAmount())
+       // sb.append("accounting_date,remote_account,transaction_type,amount").append('\n');
+        sb.append(t.getAccountingDate()).append(",").append((t.getDescription())).append(",")
+                .append(t.getAmount().getAmount())
                 .append('\n');
         return sb.toString();
     }

@@ -1,0 +1,113 @@
+{
+  "accounts": [
+    {
+      "id": "EDeS3PRtLpHq2J5HKOO3LBgUjio",
+      "accountNumber": {
+        "value": "18000114606",
+        "formatted": "1800 01 14606"
+      },
+      "name": "BRUKSKONTI FRI",
+      "description": "DESCRIPTION",
+      "balance": {
+        "amount": 496521.02,
+        "currencyCode": "NOK"
+      },
+      "availableBalance": {
+        "amount": 496521.02,
+        "currencyCode": "NOK"
+      },
+      "owner": {
+        "name": "FIRST NAME SURNAME",
+        "firstName": "FIRST NAME",
+        "lastName": "SURNAME"
+      },
+      "product": "LOCDEPOSIT",
+      "type": "USER",
+      "_links": {
+        "self": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/EDeS3PRtLpHq2J5HKOO3LBgUjio",
+          "method": "GET"
+        },
+        "transactions": {
+          "href": "http://localhost:8080/open/personal/banking/accounts/18000114606/transactions",
+          "method": "GET"
+        }
+      }
+    },
+    {
+      "id": "VsKfLg4cW7hqRcM6G3S1nBNMgc0",
+      "accountNumber": {
+        "value": "18000192569",
+        "formatted": "1800 01 92569"
+      },
+      "name": "SPAREKONTO",
+      "description": "DESCRIPTION",
+      "balance": {
+        "amount": 496251.57,
+        "currencyCode": "NOK"
+      },
+      "availableBalance": {
+        "amount": 496251.57,
+        "currencyCode": "NOK"
+      },
+      "owner": {
+        "name": "FIRST NAME SURNAME",
+        "firstName": "FIRST NAME",
+        "lastName": "SURNAME"
+      },
+      "product": "LOCDEPOSIT",
+      "type": "USER",
+      "_links": {
+        "self": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/VsKfLg4cW7hqRcM6G3S1nBNMgc0",
+          "method": "GET"
+        },
+        "transactions": {
+          "href": "http://localhost:8080/open/personal/banking/accounts/18000192569/transactions",
+          "method": "GET"
+        }
+      }
+    },
+    {
+      "id": "VsKfLg4cW7hqRcM6G3S1nBNMgc1",
+      "accountNumber": {
+        "value": "78000192569",
+        "formatted": "7800 01 92569"
+      },
+      "name": "EXTRAKONTO",
+      "description": "DESCRIPTION",
+      "balance": {
+        "amount": 496251.57,
+        "currencyCode": "NOK"
+      },
+      "availableBalance": {
+        "amount": 496251.57,
+        "currencyCode": "NOK"
+      },
+      "owner": {
+        "name": "FIRST NAME SURNAME",
+        "firstName": "FIRST NAME",
+        "lastName": "SURNAME"
+      },
+      "product": "LOCDEPOSIT",
+      "type": "USER",
+      "_links": {
+        "self": {
+          "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/VsKfLg4cW7hqRcM6G3S1nBNMgc0",
+          "method": "GET"
+        },
+        "transactions": {
+          "href": "http://localhost:8080/open/personal/banking/accounts/78000192569/transactions",
+          "method": "GET"
+        }
+      }
+    }
+
+  ],
+  "_links": {
+    "self": {
+      "href": "https://developer-api.sparebank1.no/open/personal/banking/accounts/all",
+      "method": "GET"
+    }
+  }
+}

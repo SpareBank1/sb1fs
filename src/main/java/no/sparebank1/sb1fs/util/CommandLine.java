@@ -23,7 +23,7 @@ public class CommandLine {
 
     private static Options generateOptions() {
         final Option mountPath = Option.builder("m")
-                .required()
+
                 .longOpt(OPTION_MOUNT_PATH)
                 .hasArg()
                 .desc("Mount point/path for the sb1fs filesystem")

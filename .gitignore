@@ -8,3 +8,4 @@ target
 .idea
 tmp
 .mvn/wrapper/maven-wrapper.jar
+emailaddresses

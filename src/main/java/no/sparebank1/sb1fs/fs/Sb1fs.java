@@ -51,7 +51,9 @@ public class Sb1fs extends FuseStubFS {
     }
 
     public void stop() {
+        log.info("Unmounting sb1fs at : {}",mountPath);
         umount();
+        log.info("Successfully unmounted sb1fs at : {}",mountPath);
     }
 
     @Override
