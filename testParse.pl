@@ -1,9 +1,10 @@
+#!/usr/bin/perl
 
 use warnings;
 use strict;
 use Data::Dumper;
 use JSON::PP;
-use File::Slurp;
+#use File::Slurp;
 #use JSON::XS;
 #use Text::CSV;
 #use JSON::MaybeXS;
@@ -19,26 +20,45 @@ use File::Slurp;
  	my $folderName = createDirectory($account->{'accountNumber'} ."-". $account->{'name'});
 	my $transFilename = 'transactions-'. $account->{'accountNumber'} .'.json';
 	my $transactions = readTransactions($transFilename); 	
-	dumpTransactions($transactions, $folderName);
+	dumpTransactions($folderName, $transactions);
  }
  exit;
 
 sub dumpTransactions {
- my ($jsonTransactions, $folderName) = @_;
+ my ($folderName, $jsonTransactions) = @_;
  foreach my $trans (@$jsonTransactions) {
 # 	warn("---- one trans: ". Dumper($trans) ."\n");
- 	dumpTransaction($trans);
+ 	dumpTransaction($folderName, $trans);
  }
 }
 
+sub saveFile {
+ my ($folderName, $filename, $buffer) = @_;
+ $filename = $folderName .'/'. escapeFilename($filename);
+ warn("** Writing file: ". $filename ."\n");
+ open my $fh, '>', $filename or die;
+ print $fh $buffer;
+ close $fh;
+}
+
+sub escapeFilename {
+ my ($filename) = @_;
+ $filename =~ s/ /_/g;
+ return $filename;
+}
+
 sub dumpTransaction {
- my ($transaction) = @_;
-# warn("** ". Dumper($transaction) ."\n");
- print $transaction->{'accountingDate'};
- print "\t". $transaction->{'description'};
- print "\t". $transaction->{'amount'}->{'amount'};
- print "\t(". $transaction->{'archiveReference'} .")";
- print "\n";
+ my ($folderName, $transaction) = @_;
+ my $filename = $transaction->{'archiveReference'} ."-l ". $transaction->{'description'} .'.sdv';
+
+ # warn("** ". Dumper($transaction) ."\n");
+ my $buffer;
+ $buffer .= $transaction->{'accountingDate'};
+ $buffer .= ",". $transaction->{'description'};
+ $buffer .= ",". $transaction->{'amount'}->{'amount'};
+ $buffer .= ",". $transaction->{'archiveReference'} ."";
+ $buffer .= "\n";
+ saveFile($folderName, $filename, $buffer);
 }
 
 sub readTransactions {
@@ -70,4 +90,13 @@ sub createDirectory {
  warn("** Creating $nameEscaped ($name)\n");
  mkdir($nameEscaped) || warn("Cant create folder '$nameEscaped': $!\n");
  return $nameEscaped;
+}
+
+sub read_file {
+ my ($filename) = @_;
+ open my $fh, '<', $filename or die;
+ $/ = undef;
+ my $data = <$fh>;
+ close $fh;
+ return $data;
 }
