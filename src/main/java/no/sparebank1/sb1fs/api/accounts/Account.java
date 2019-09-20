@@ -12,6 +12,7 @@ public class Account {
     private Owner owner;
     private String product;
     private String type;
+    private String iban;
     private AccountLinks links;
 
     @JsonProperty("id")
@@ -58,6 +59,11 @@ public class Account {
     public String getType() { return type; }
     @JsonProperty("type")
     public void setType(String value) { this.type = value; }
+
+    @JsonProperty("iban")
+    public String getIban() { return iban; }
+    @JsonProperty("iban")
+    public void setIban(String iban) { this.iban = iban; }
 
     @JsonProperty("_links")
     public AccountLinks getLinks() { return links; }

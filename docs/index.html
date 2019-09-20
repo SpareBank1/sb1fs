@@ -1,127 +1,154 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Fintech for Dummies: kom i gang med bank-API'er!</title>
+    <title>Fintech for Dummies: kom i gang med bank-API'er!</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sb1.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sb1.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="footer">
+        <img src="sparebank1_logo.jpg" class="plain"/>
+    </div>
 
-				<!-- ---------- Start slide ---------- -->
-				<section>
-                    <h3>Fintech for Dummies:</h3>
-                    <h1>Kom i gang med bank-API'er!</h1>
-					<p>&nbsp;</p>
-                    <blockquote>https://github.com/SpareBank1/sb1fs</blockquote>
-					<img src="sparebank1_logo.jpg"  class="plain"  />
-				</section>
+    <div class="slides">
 
-				<!-- ---------- about ---------- -->
-				<section>
-				<h3>Om oss</h3>
-                    <ul>
-                        <li>Jonas Nordstrand</li>
-                        <li>Tore Haugland</li>
-                    </ul>
-				</section>
+        <!-- ---------- Start slide ---------- -->
+        <section>
+            <h3>Fintech for Dummies:</h3>
+            <h1>Kom i gang med bank-API'er!</h1>
+            <p>&nbsp;</p>
+            <blockquote>https://github.com/SpareBank1/sb1fs</blockquote>
+        </section>
 
-				<!-- ---------- innhold ---------- -->
-				<section>
-				<h2>Innhold</h2>
-				<!-- 
-					<li>Del 0: Praktisk om workshop'en</li>
-					<li>Del 1: Kort om Bank api'er (og PSD2</li>
-					<li>Del 2: Hva vi skal lage i dag - sb1fs</li>
-					<li>Del 3: Autentisering - oauth2</li>
-					<li>Del 4: Bruk av api'ene</li>
-					<li>Del 5: Hvordan komme i gang med andre banker</li>
--->
-				</section>
+        <!-- ---------- about ---------- -->
+        <section>
+            <h3>Om oss</h3>
+            <ul>
+                <li>Tore Haugland</li>
+                <li>Jonas Nordstrand</li>
+                <li>Kristian Lund</li>
+            </ul>
+        </section>
 
-				<section data-transition="none">
-					<img width="100%" src="intro1.png" />
-				</section>
+        <!-- ---------- PSD2 ---------- -->
+        <section>
+            <p>Hvorfor snakker alle om PSD2 og bank APIer nå?</p>
+        </section>
 
-				<section data-transition="none">
-					<img width="100%" src="intro2.png" />
-				</section>
+        <section>
+            <h3>PSD2</h3>
+            <ul>
+                <li>Du eier dine data</li>
+                <li>EU Januar 2018</li>
+                <li>Norge i slutten av 2019</li>
+            </ul>
+        </section>
 
-				<section data-transition="none">
-					<img width="100%" src="intro3.png" />
-				</section>
-
-				<section data-transition="none">
-					<img width="100%" src="intro4.png" />
-				</section>
-
-				
-				<!-- ---------- workshop requirements ---------- -->
-				<section  style="text-align: left;">
-				<h2>Krav til utstyr</h2>
-					<li>Du kan selv velge hva programmeringsspråk du prøver ut API'et med</li>
-					<li>For å følge eksemplene våre (sb1fs) trenger du:</li>
-					<ul>
-						<li>OS: Windows 10 m/admin tilgang eller Linux eller MacOS</li>
-						<li>Java: Java 8 eller bedre</li>
-						<li>Node (npm)</li>
-						<li>Maven (mvnw er inkludert i prosjekt)</li>
-						<li>git</li>
-						<li>Valgfritt IDE</li>
-					</ul>
-				</section>
+        <section>
+            <div style="display: flex; padding: 10px">
+                <div>
+                    <h4>Konto</h4>
+                    <img width="282" src="konto.png"/>
+                </div>
+                <div>
+                    <h4>Transaksjoner</h4>
+                    <img width="282" src="transaksjoner.png"/>
+                </div>
+                <div>
+                    <h4>Betaling</h4>
+                    <img width="282" src="betaling.png"/>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- ---------- agend/ innhold ---------- -->
+
+        <section>
+            <h2>Hva skal vi gjøre idag?</h2>
+        </section>
+
+        <section data-transition="none">
+            <img width="100%" src="intro1.png" class="plain" />
+        </section>
+
+        <section data-transition="none">
+            <img width="100%" src="intro2.png" class="plain" />
+        </section>
+
+        <section data-transition="none">
+            <img width="100%" src="intro3.png" class="plain" />
+        </section>
+
+        <section data-transition="none">
+            <img width="100%" src="intro4.png" class="plain" />
+        </section>
+
+        <!-- ------------- FUSE / sb1fs ------------->
+        <section>
+            <h2>Hva vi skal lage idag?</h2>
+            <p class="fragment"><i>sb1fs</i></p>
+            <p class="fragment">FUSE</p>
+        </section>
 
 
-				<!-- ----------Hva vi skal lage i dag ---------- -->
-				<section>
-				<h3>Del 2</h3>
-				<p>Hva vi skal lage i dag - sb1fs</p>
-				<p>Hvorfor sb1fs ?</p>
-				</section>
+        <!-- ---------- workshop requirements ---------- -->
+        <section style="text-align: left;">
+            <h2>Øvinger</h2>
+            <p>Krav til utstyr</p>
+			<aside class="notes">
+                <li>Handuppræckning om någon brukar Windows!</li>
+				<li>Du kan selv velge hva programmeringsspråk du prøver ut API'et med</li>
+				<li>For å følge eksemplene våre (sb1fs) trenger du:</li>
+				<ul>
+					<li>OS: Windows 10 m/admin tilgang eller Linux eller MacOS</li>
+					<li>Java: Java 8 eller bedre</li>
+					<li>Node (npm)</li>
+					<li>Maven (mvnw er inkludert i prosjekt)</li>
+					<li>git</li>
+					<li>Valgfritt IDE</li>
+				</ul>
+			</aside>
+
+        </section>
+
+        <!-- ---------- DEL 1.x SB1FS og FUSE ---------- -->
+        <section style="text-align: left;">
+            <h3>Øvning 1: Uppstart</h3>
+            <li>Clone'a koden: https://github.com/SpareBank1/sb1fs</li>
+            <li>Bygg koden</li>
+            <li>Kjør koden</li>
+            <blockquote>Detaljerade instruktioner i workshop.md</blockquote>
+        </section>
 
 
-				
-				<!-- ---------- DEL 1.x SB1FS og FUSE ---------- -->
+        <!-- Deltagare utfør uppgift 1
+
+        1) **Clone'a repo't**
+        2) **Bygg repo't (se instruktioner i [README](README.md))**
+        3) **Verifiera att du kan køra exempel-filsystemet på din maskin (se instruktioner i [README](README.md)).**
+
+        -->
 
 
-                <section  style="text-align: left;">
-					<h3>Øvning 1: Uppstart</h3>
-					<li>Clone'a koden: https://github.com/SpareBank1/sb1fs</li>
-					<li>Bygg koden</li>
-                    <li>Kjør koden</li>
-                    <blockquote>Detaljerade instruktioner i workshop.md</blockquote>
-                </section>
-
-				
-                <!-- Deltagare utfør uppgift 1
-
-                1) **Clone'a repo't**
-                2) **Bygg repo't (se instruktioner i [README](README.md))**
-                3) **Verifiera att du kan køra exempel-filsystemet på din maskin (se instruktioner i [README](README.md)).**
-
-                -->
-
-
-                <section>
+        <section>
 					
 					<pre><code data-trim data-noescape>
 class SaulFsApplication {
@@ -133,8 +160,8 @@ public static void main(String[] args) {
 <span class="fragment"> OldSchoolHttpServer.serveJson();<span>
  ...
 	</code></pre>
-				</section>
-				<section>
+        </section>
+        <section>
 
 					<pre><code data-trim data-noescape>
  ...ccounts
@@ -149,85 +176,112 @@ public static void main(String[] args) {
 <span class="fragment"> new Sb1fs(root, mountPath).start();
 }</span>
 	</code></pre>
-				</section>
+        </section>
 
 
-				<section>
-					<img width="100%" src="klasser.png" />
-				</section>
-				<section>
-					<img width="100%" src="tree.png" />
-				</section>
-
-                <!-- ---------- workshop intro ---------- -->
-				<section>
-				<h3>Del 1</h3>
-				<p>Kort om bank API'er og PSD2</p>
-				</section>
-
-				<section>
-					<img width="100%" src="api_diagram.png" />
-
-				</section>
+        <section>
+            <img width="100%" src="klasser.png"/>
+        </section>
+        <section>
+            <img width="100%" src="tree.png"/>
+        </section>
 
 
-				<section>
-				<h1>Del 3</h1>
-				<p>Autentisering - oauth2</h2>
-				</section>
-
-				
-				<!-- ---------- oauth ---------- -->
-				<section data-transition="none">
-					<img width="100%" src="duke_tom.png" />
-				</section>
-
-				<!-- ---------- oauth ---------- -->
-				<section data-transition="none">
-					<img width="100%" src="duke_oauth.png" />
-				</section>
-
-				<!-- ---------- oauth ---------- -->
-				<section data-transition="none">
-					<img width="100%" src="duke_oauth_workshop.png" />
-				</section>
-
-				<section>
-				<h2>DEmo: hvordan finne authtoken i utvikerportal</h2>
-				</section>
+        <section>
+            <h2>Autentisering - oauth2</h2>
+        </section>
 
 
-                <section style="text-align: left;">
-                    <h3>Øvning 2: Registrering i SpareBank 1 och visning av konto-saldo</h3>
-                    <li>Registrera dig på och lægg upp en applikation:<br/>https://developersparebank1.no </li>
-                    <li>Bruk token från registreringen før att køra no.sparebank1.sb1fs.app.Sb1FsApplication</li>
-                    <li>Implementera visning av konto-saldo</li>
-                    <blockquote>Detaljerade instruktioner och tips i workshop.md!</blockquote>
-                </section>
+        <!-- ---------- oauth setup ---------- -->
+        <section data-transition="none">
+		<h3>Oauth - usecase</h3>
+            <img width="50%" src="luksusfellen_site.png" class="plain" />
+        </section>
+
+        <section data-transition="none">
+		<h3>Oauth - usecase</h3>
+            <img width="100%" src="oauth_1_1.png" class="plain" />
+        </section>
+
+        <section data-transition="none">
+		<h3>Oauth - applikasjon</h3>
+            <img width="100%" src="oauth_1_2.png" class="plain" />
+        </section>
+
+        <section data-transition="none">
+		<h3>Oauth - Opprette applikasjon</h3>
+            <img width="100%" src="oauth_1_3.png" class="plain" />
+        </section>
+
+        <!-- ---------- oauth authorization ---------- -->
+        <section data-transition="none">
+            <h3>Oauth - authorization (1)</h3>
+            <img width="100%" src="oauth_2_1.png" class="plain" />
+        </section>
+        <section data-transition="none">
+            <h3>Oauth - authorization (2)</h3>
+            <img width="100%" src="oauth_2_2.png" class="plain" />
+        </section>
+        <section data-transition="none">
+            <h3>Oauth - authorization (3)</h3>
+            <img width="100%" src="oauth_2_3.png" class="plain" />
+        </section>
+        <section data-transition="none">
+            <h3>Oauth - authorization (4)</h3>
+            <img width="100%" src="oauth_2_4.png" class="plain" />
+        </section>
+        <section data-transition="none">
+            <h3>Oauth - authorization (5)</h3>
+            <img width="100%" src="oauth_2_5.png" class="plain" />
+        </section>
+
+        <!-- ---------- oauth access token ---------- -->
+        <section data-transition="none">
+            <h3>Oauth - access token</h3>
+            <img width="100%" src="oauth_3_1.png" class="plain" />
+        </section>
+
+        <section>
+            <h2>Demo: hvordan finne authtoken i utvikerportal</h2>
+        </section>
 
 
+        <!-- --- Task 2 -->
+        <section style="text-align: left;">
+            <h3>Øvning 2: Registrering i SpareBank 1 och visning av konto-saldo</h3>
+            <li>Registrera dig på och lægg upp en applikation:<br/>https://developersparebank1.no</li>
+            <li>Bruk token från registreringen før att køra no.sparebank1.sb1fs.app.Sb1FsApplication</li>
+            <li>Implementera visning av konto-saldo</li>
+            <blockquote>Detaljerade instruktioner och tips i workshop.md!</blockquote>
+        </section>
 
 
-                <!-- Deltagare utfør uppgift 2
+        <!-- Deltagare utfør uppgift 2
 
-                Varje konto har en korresponderande REST-resurs som representerar transaktioner på kontot.
+        Varje konto har en korresponderande REST-resurs som representerar transaktioner på kontot.
 
-                **Implementera varje transaktion som en fil med transaktionsdetaljer i respektive konto-katalog.**
+        **Implementera varje transaktion som en fil med transaktionsdetaljer i respektive konto-katalog.**
 
-                -->
-
-				
-
-                <!-- Behov før Slides? -->
+        -->
 
 
-                <section>
-                    <img src="quicktype.png" />
-                    <p>
-                        quicktype generates strongly-typed models and serializers from JSON, JSON Schema, and GraphQL queries, making it a breeze to work with JSON type-safely in any programming language.
-                    </p>
-                </section>
-                <section>
+        <!-- Behov før Slides? -->
+<section>
+	<pre><code data-trim data-noescape>
+$ ls tmp/1800_01_17052_BRUKSKONTI_FRI/saldo/
+455.75.kr
+</code></pre>
+
+        </section>
+
+        <section>
+            <img src="quicktype.png"/>
+            <p>
+                quicktype generates strongly-typed models and serializers from JSON, JSON Schema, and GraphQL queries, making
+                it a breeze to work with JSON type-safely in any programming language.
+            </p>
+        </section>
+        <section>
 					<pre><code data-trim data-noescape>
 $ quicktype --out . \
             --top-level ApiTransactions \
@@ -235,49 +289,59 @@ $ quicktype --out . \
             --package no.sparebank1.sb1fs.api.transactions \
             transactions.json
 					</code></pre>
-                </section>
+        </section>
 
 
-                <section style="text-align: left;">
-                    <h3>Øvning 3: Visning av transaktioner</h3>
-                    <li>Implementera visning av transaktioner som filer i kontokatalogerna</li>
-                    <blockquote>Detaljerade instruktioner och tips i workshop.md!</blockquote>
-                </section>
+        <section style="text-align: left;">
+            <h3>Øvning 3: Visning av transaktioner</h3>
+            <li>Implementera visning av transaktioner som filer i kontokatalogerna</li>
+            <blockquote>Detaljerade instruktioner och tips i workshop.md!</blockquote>
+        </section>
 
 
-                <!-- Deltagare utfør uppgift 3  -->
+        <!-- Deltagare utfør uppgift 3  -->
 
 
-                <!-- Deltagare utfør uppgift 4 (eventuellt -->
+        <!-- Deltagare utfør uppgift 4 (eventuellt -->
 
 
-             <!-- ---------- DEL 4: Andre banker ---------- -->
-                <section>
-                    <h3>Del 4</h3>
-                    <li>Info om andre banker sine api'er</li>
-                    <li> - Prøv ut selv</li>
-                </section>
+        <!-- ---------- DEL 4: Slut ---------- -->
+        <section>
+            <h3>Oppsummering</h3>
+            <li>demo</li>
+        </section>
 
+        <section>
+            <h3>Muligheter</h3>
+            <ul>
+                <li>tekniska forbedringer</li>
+                <li>integrationsmuligheter</li>
+                <li>multibank</li>
+                <li>spm.?</li>
+            </ul>
+        </section>
+    </div>
+</div>
 
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-			</div>
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
