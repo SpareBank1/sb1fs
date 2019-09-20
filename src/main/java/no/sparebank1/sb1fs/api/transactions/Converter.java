@@ -10,9 +10,9 @@
 //
 //     APITransactions data = Converter.fromJsonString(jsonString);
 
-package no.sparebank1.sb1fs.transactions;
+package no.sparebank1.sb1fs.api.transactions;
 
-import java.util.Map;
+import java.util.*;
 import java.io.IOException;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.core.JsonProcessingException;

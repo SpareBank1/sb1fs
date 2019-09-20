@@ -1,6 +1,6 @@
-package no.sparebank1.sb1fs.transactions;
+package no.sparebank1.sb1fs.api.transactions;
 
-import java.util.Map;
+import java.util.*;
 import com.fasterxml.jackson.annotation.*;
 
 public class Transaction {
@@ -10,8 +10,8 @@ public class Transaction {
     private String archiveReference;
     private TransactionLinks links;
     private String remoteAccount;
-    private String transactionCode;
-    private String transactionType;
+    private TransactionCode transactionCode;
+    private TransactionType transactionType;
 
     @JsonProperty("amount")
     public Amount getAmount() { return amount; }
@@ -44,12 +44,26 @@ public class Transaction {
     public void setRemoteAccount(String value) { this.remoteAccount = value; }
 
     @JsonProperty("transactionCode")
-    public String getTransactionCode() { return transactionCode; }
+    public TransactionCode getTransactionCode() { return transactionCode; }
     @JsonProperty("transactionCode")
-    public void setTransactionCode(String value) { this.transactionCode = value; }
+    public void setTransactionCode(TransactionCode value) { this.transactionCode = value; }
 
     @JsonProperty("transactionType")
-    public String getTransactionType() { return transactionType; }
+    public TransactionType getTransactionType() { return transactionType; }
     @JsonProperty("transactionType")
-    public void setTransactionType(String value) { this.transactionType = value; }
+    public void setTransactionType(TransactionType value) { this.transactionType = value; }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "amount=" + amount +
+                ", accountingDate='" + accountingDate + '\'' +
+                ", description='" + description + '\'' +
+                ", archiveReference='" + archiveReference + '\'' +
+                ", links=" + links +
+                ", remoteAccount='" + remoteAccount + '\'' +
+                ", transactionCode=" + transactionCode +
+                ", transactionType=" + transactionType +
+                '}';
+    }
 }
