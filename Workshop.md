@@ -106,7 +106,7 @@ och, givet att du har lastat ned JSON-data från transaktionsdata-resursen till 
 
 Det finns ett eget API før konto-øverføringar. Kall till detta kan implementeras med filsystemsemantik t.ex. så att:
 
-    $ mv 6001050032/saldo/520.kr 8001050032/saldo/20.kr
+    $ mv 6001050032/saldo/20.kr 8001050032/saldo/20.kr
     
 øverfør 20 kronor från kontot 6001050032 till kontot 8001050032. 
 
