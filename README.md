@@ -1,22 +1,6 @@
 # sb1fs
 
-This is a [jnr-fuse](https://github.com/SerCeMan/jnr-fuse) based application for exposing hierarchical bank data as a file system.
-
-## Build project
-
-    $ ./mvnw clean install
-
-## Create local folder for mounting
-
-    $ mkdir tmp
-
-## Mount sb1fs
-    
-    $ java -jar target/sb1fs-0.0.1-SNAPSHOT.jar --mountPath=tmp
-    
-## Open another terminal and test away!!!
-
-    $ ls tmp
+This is a [jnr-fuse](https://github.com/SerCeMan/jnr-fuse) based application for exposing hierarchical bank data as a file system using [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace).
 
 ## Prerequisites
 ### Linux
@@ -38,3 +22,20 @@ Notes: You need windows 10 to run winfsp
 
  * Download and install [winfsp](http://www.secfs.net/winfsp/download/)
  * Run the sb1fs application (default mount point is S:\ for windows)
+
+## Build project
+
+    $ ./mvnw clean install
+
+## Create local folder for mounting
+
+    $ mkdir tmp
+
+## Mount sb1fs
+    
+    $ java -jar target/sb1fs-0.0.1-SNAPSHOT.jar --mountPath=tmp
+    
+## Open another terminal and test away!!!
+
+    $ ls tmp
+
